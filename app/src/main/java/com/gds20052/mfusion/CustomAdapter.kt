@@ -7,12 +7,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter(val img: ArrayList<Int>, text: Array<String>, desc: Array<String>):RecyclerView.Adapter<CustomAdapter.CustomViewerHolder>() {
+class CustomAdapter(val img: ArrayList<Int>,val text: Array<String>,val desc: Array<String>):RecyclerView.Adapter<CustomAdapter.CustomViewerHolder>() {
 
-
+//CONTROLLER FOR RECICLERVIEWER
     class CustomViewerHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bindValue(image: Int,){
+        fun bindValue(image: Int,txt:String,desc: String){
 
             itemView.findViewById<ImageView>(R.id.imageView).setImageResource(image)
 
@@ -38,9 +38,9 @@ class CustomAdapter(val img: ArrayList<Int>, text: Array<String>, desc: Array<St
 
 
     }
-
+// METHOD FOR THE MENU OF FOOD
     override fun onBindViewHolder(holder: CustomViewerHolder, position: Int) {
 
-        holder.bindValue(img[position])
+        holder.bindValue(img[position],text[position],desc[position])
     }
 }

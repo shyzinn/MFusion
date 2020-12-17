@@ -23,8 +23,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="119dp"
-            android:layout_height="116dp"
+            android:layout_width="153dp"
+            android:layout_height="115dp"
             android:layout_marginTop="16dp"
             android:layout_marginRight="60dp"
 
@@ -34,7 +34,6 @@
             android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_toRightOf="@id/imageView"
             android:text="dummy"
@@ -49,10 +48,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text1"
-            android:layout_marginLeft="2dp"
             android:layout_marginTop="4dp"
             android:layout_toRightOf="@id/imageView"
-            android:text="dummy"></TextView>
+            android:text="dummy">
+
+        </TextView>
 
 
     </RelativeLayout>
