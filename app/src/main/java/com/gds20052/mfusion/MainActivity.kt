@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(), CustomAdapter.OnItemClickListener {
 
 
     override fun onItemClick(position: Int) {
-        Toast.makeText(this, "Item ${position+1} clicked", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "${texts[position]} added to cart", Toast.LENGTH_SHORT).show()
     }
 
     // Method to call
